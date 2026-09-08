@@ -15,15 +15,13 @@ How the structural tags are used
 
 header (role="banner")
 Top-level header for the whole page. Contains the H1/H2 titles and the nav.
-Note: <article> also has its own (unlabeled) <header>, used just to hold that
-section's H3 title and intro paragraph - a locally-scoped header, not the page banner.
+Note: <article> also has its own (unlabeled) <header>, used just to hold that section's H3 title and intro paragraph - a locally-scoped header, not the page banner.
 
 nav (role="navigation")
 Wraps the site's link list inside the page <header>, marking it as the page's primary navigation.
 
 main (role="main")
-Wraps the article and marks it as the page's main content, distinct from the
-header, nav, and footer around it.
+Wraps the article and marks it as the page's main content, distinct from the header, nav, and footer around it.
 
 article (role="article")
 Wraps the entire lecture content. It represents a self-contained piece of content that could stand on its own.
