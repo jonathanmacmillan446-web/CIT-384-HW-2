@@ -1,1 +1,7 @@
-https://csun-orm.github.io/comp484-hw2/
+# CIT 384 HW 2
+
+## Live Demo
+
+You can view the published website here:
+
+https://jonathanmacmillan446-web.github.io/CIT-384-HW-2/
