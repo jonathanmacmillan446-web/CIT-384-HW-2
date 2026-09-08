@@ -6,9 +6,11 @@
 <link href="_css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<!-- This marks the page's introductory/banner region. -->
 <header role="banner">
   <h1>Comp 484</h1>
   <h2>Structuring Pages</h2>
+  <!-- This tells assistive devices where the primary navigation is, so a screen reader user can skip straight to or past it. -->
   <nav role="navigation">
     <ul>
       <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
@@ -20,7 +22,9 @@
     </ul>
   </nav>
 </header>
+<!-- This identifies the main content of the page - there's only ever one of these. -->
 <main role="main">
+  <!-- The article role marks this as a standalone, self-contained piece of content. -->
   <article role="article">
     <header>
       <h3> Conveying meaning through structure </h3>
@@ -37,6 +41,7 @@
       <p>One of the fundamental concepts of HTML is that its documents can be represented by a document outline that summarizes the content of the page. Imagine a page being represented by a table of contents and you'll have a good idea of what one of these outlines might look like. These outlines assist in tasks such as quickly searching documents and making content easier to navigate for assistive devices. </p>
       <p>Prior to HTML5, document outlines were generated entirely through the use of headings. An H1 at the top of the page would serve to identify the page content, and subsequent headings would create sections and subsections inside of it. This meant that having a strategy for when to use certain headings was critical for maintaining consistent document structure. In HTML5 a new outline algorithm was introduced that added the new sectioning elements to the heading elements and created a more sophisticated outlining model. Although not currently implemented by user agents it is still recommended that authors familiarize themselves with it so that they're using the new sectioning and semantic tags properly. </p>
       <p>It is still considered to be a best practice to use heading tags to establish the document outline. Mozilla has a fantastic article on <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document" title="Mozilla Dev article on HTML sections">sections and outlines</a> in HTML documents that I strongly recommend reading.</p>
+      <!-- Complementary marks the W3C Warning box as related-but-separate content. -->
       <aside role="complementary">
         <h4>W3C Warning</h4>
         <p>At the time of the authoring of this course, the W3C had posted this warning regarding the HTML5 outline algorithm:</p>
@@ -49,6 +54,7 @@
     </section>
   </article>
 </main>
+<!-- Contentinfo marks the footer's site/contact info. -->
 <footer role="contentinfo">
   <p><a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a> 18111 Nordhoff St Northridge, CA 91330</p>
 </footer>

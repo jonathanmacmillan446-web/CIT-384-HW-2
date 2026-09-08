@@ -1,0 +1,39 @@
+Document Outline - structure.html
+
+Heading hierarchy:
+
+H1: Comp 484
+  H2: Structuring Pages
+    H3: Conveying meaning through structure
+    H3: Sectioning elements
+    H3: Document outlines
+      H4: W3C Warning
+    H3: WAI-ARIA Roles
+
+How the structural tags are used
+---------------------------------
+
+header (role="banner")
+Top-level header for the whole page. Contains the H1/H2 titles and the nav.
+Note: <article> also has its own (unlabeled) <header>, used just to hold that
+section's H3 title and intro paragraph - a locally-scoped header, not the page banner.
+
+nav (role="navigation")
+Wraps the site's link list inside the page <header>, marking it as the page's primary navigation.
+
+main (role="main")
+Wraps the article and marks it as the page's main content, distinct from the
+header, nav, and footer around it.
+
+article (role="article")
+Wraps the entire lecture content. It represents a self-contained piece of content that could stand on its own.
+
+section
+Used four times inside the article, one per topic: the intro ("Conveying meaning through structure"), "Sectioning elements", "Document outlines", and "WAI-ARIA Roles". 
+Each section has its own <h3> heading and breaks the article into distinct thematic chunks.
+
+aside (role="complementary")
+Nested inside the "Document outlines" section. Holds the W3C Warning blockquote - content that is related to but separate from the main flow of that section.
+
+footer (role="contentinfo")
+Page-level footer, outside of main. Holds the CSUN address/contact info for the site.
